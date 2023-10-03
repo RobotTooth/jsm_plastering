@@ -2,6 +2,11 @@ html {
     font-size: 16px;
     background-color: #45171d;
 }
+
+h1 {
+    color: #333333;
+}
+
 /* header section */
 
 header {
@@ -44,6 +49,7 @@ header h1 {
 .nav {
     text-align: center; 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -84,8 +90,17 @@ header h1 {
     background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 1px solid black;
+}
+
+.mission h2 {
+    flex: 1;
+    text-align: center;
+    color: #fecea8; 
+    text-shadow: 2px 2px 4px black;
+    font-style: italic;
+    background-color: #45171d;
 }
 
 /* portfolio section */
@@ -93,6 +108,11 @@ header h1 {
 .portfolio {
     width: 100%;
     display: flex;
-    flex: 1 1 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.portfolio img {
+    flex: 1;
+    max-width: 33%;
 }
