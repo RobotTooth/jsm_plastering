@@ -7,7 +7,7 @@ h1 {
     color: #333333;
 }
 
-h2 { 
+h2, p { 
     color: #fecea8;
 }
 
@@ -129,11 +129,27 @@ header h1 {
 }
 
 .team-images-container {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
-}
-
-.team-image {
-    flex: 1 1 3rem;
-}
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .team-image {
+    flex: 0 0 23%;
+    text-align: center;
+    min-height: 300px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .team-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .team-image p {
+    margin: 10px 0; 
+  }
+  
