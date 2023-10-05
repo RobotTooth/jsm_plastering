@@ -7,6 +7,10 @@ h1 {
     color: #333333;
 }
 
+h2 { 
+    color: #fecea8;
+}
+
 /* header section */
 
 header {
@@ -80,7 +84,7 @@ header h1 {
 
 /* mission statement section */
 
-.mission {
+.mission-statement {
     margin-top: 65px;
     min-height: 300px;
     width: auto;
@@ -94,10 +98,9 @@ header h1 {
     border-bottom: 1px solid black;
 }
 
-.mission h2 {
+.mission-statement h2 {
     flex: 1;
     text-align: center;
-    color: #fecea8; 
     text-shadow: 2px 2px 4px black;
     font-style: italic;
     background-color: #45171d;
@@ -110,9 +113,27 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-bottom: 1px solid black;
 }
 
 .portfolio img {
     flex: 1;
     max-width: 33%;
+}
+
+/* team photos section */
+
+.team h2 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.team-images-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-image {
+    flex: 1 1 3rem;
 }
