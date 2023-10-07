@@ -26,8 +26,8 @@ h2, p {
 
 header {
     width: 100%;
-    height: 65px;
-    display: inline-flex;
+    height: auto;
+    display: flex;
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -42,11 +42,12 @@ header {
 
 .logo {
     display: flex;
+    align-items: center;
 }
 
 .logo img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 50px;
     width: auto;
     height: auto;
 }
@@ -76,8 +77,8 @@ header h1 {
     display: flex;
     flex: 1;
     list-style: none;
-    vertical-align: middle;
-    justify-content: end;
+    align-items: center;
+    justify-content: space-around;
     gap: 5%;
 }
 
@@ -91,6 +92,28 @@ header h1 {
     width: auto;
     height: auto;
     padding: 0;
+}
+
+@media only screen and (max-width: 425px) {
+    header h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 727px) {
+    .nav ul {
+        display: none;
+    }
+    .nav {
+        justify-content: end;
+    }
+}  
+
+
+@media only screen and (max-width: 481px) {
+    .nav {
+        display: none;
+    }
 }
 
 /* mission statement section */
@@ -133,6 +156,12 @@ header h1 {
 .portfolio img {
     flex: 1;
     max-width: 33%;
+}
+
+@media only screen and (max-width: 425px) {
+    .portfolio img {
+        max-width:100%;
+    }
 }
 
 /* team photos section */
