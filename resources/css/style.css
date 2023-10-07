@@ -3,12 +3,23 @@ html {
     background-color: #45171d;
 }
 
+a {
+    color: black;
+  }
+
+a:hover {
+    color: blue;
+    font-size: 1.1rem;
+}
+
 h1 {
     color: #333333;
 }
 
 h2, p { 
     color: #fecea8;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
 }
 
 /* header section */
@@ -86,7 +97,7 @@ header h1 {
 
 .mission-statement {
     margin-top: 65px;
-    min-height: 300px;
+    min-height: 400px;
     width: auto;
     overflow: hidden;
     background-image: url("../images/josh-kerr-gXxuM7_tHjI-unsplash.jpg");
@@ -100,13 +111,16 @@ header h1 {
 
 .mission-statement h2 {
     flex: 1;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
     font-style: italic;
     background-color: #45171d;
+    padding: 1rem;
 }
 
 /* portfolio section */
+
+.portfolio-header{
+    padding: 2.35rem;
+}
 
 .portfolio {
     width: 100%;
@@ -124,8 +138,7 @@ header h1 {
 /* team photos section */
 
 .team h2 {
-    text-align: center;
-    padding: 3rem;
+    padding: 2.35rem;
 }
 
 .team-images-container {
@@ -153,3 +166,26 @@ header h1 {
     margin: 10px 0; 
   }
   
+  /* footer section */
+
+  footer {
+    padding-top: 1rem;
+    border-top: 1px solid black;
+  }
+
+  .contact {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    padding: 1rem;
+  }
+
+  .copyright {
+    padding-bottom: 1rem;
+  }
+
+  .attributes {
+    text-align: center;
+  }
